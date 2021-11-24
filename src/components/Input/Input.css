@@ -1,0 +1,15 @@
+.currency{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.7;
+    font-family: sans-serif;
+    color: #444;
+    box-sizing: border-box;
+    margin: 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;;
+    outline: none;
+    width: 33%;
+}

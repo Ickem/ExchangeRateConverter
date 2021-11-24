@@ -1,0 +1,8 @@
+.swap{
+    display: inline-block;
+    width:40px;
+    height:40px;
+    background: url('./swap.png') no-repeat;
+    background-size:cover;
+    cursor: pointer;
+}

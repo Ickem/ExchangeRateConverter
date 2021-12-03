@@ -35,20 +35,26 @@ function App(){
 
     useEffect(() => {
       if(!flag) {
-        setAmountCurrency(amountBYN * exchangeCurrency);
+        setAmountCurrency((amountBYN / exchangeCurrency).toFixed(2));
       } else {
-        setAmountBYN(amountCurrency / exchangeCurrency);
+        setAmountBYN((amountCurrency * exchangeCurrency).toFixed(2));
       }
     }, [amountBYN,exchangeCurrency,amountCurrency]);
 
 
 
   function handleFromAmountChange(e){
+      if(!Number(e.target.value)){
+          return
+      }
       setAmountBYN(e.target.value);
       setFlag(false)
   }
 
   function handleToAmountChange(e){
+      if(!Number(e.target.value)){
+          return
+      }
       setAmountCurrency(e.target.value);
       setFlag(true)
   }

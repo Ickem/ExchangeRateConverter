@@ -4,5 +4,5 @@
     height:40px;
     background: url('./swap.png') no-repeat;
     background-size:cover;
-    cursor: pointer;
+    border: 1px solid #13232f;;
 }
